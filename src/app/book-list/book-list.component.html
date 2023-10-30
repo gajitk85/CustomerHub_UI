@@ -1,0 +1,43 @@
+
+      
+  <!-- <div class="alert alert-danger" role="alert"    [ngStyle]="{'display':!displayError?'none':'block'}">
+    {{displayError}}
+  </div> -->
+
+  <div class="alert alert-danger alert-dismissible fade show" role="alert" [ngStyle]="{'display':!displayError?'none':'block'}">
+    <strong>Error!!!!</strong> 
+    {{displayError}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <table class="table" *ngIf="books.length>0">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">#Id</th>
+        <th scope="col">Book Name</th>
+        <th scope="col">Genre</th>
+        <th scope="col">Price</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Action </th>        
+      </tr>
+    </thead>
+    <tbody>
+      <tr scope="row" *ngFor="let book of books">
+        <th scope="col">{{book.id}}</th>
+        <td scope="col">{{book.name}}</td>
+        <td scope="col">{{book.genre}}</td>
+        <td scope="col">{{book.price | currency:'INR'}}</td>
+        <td scope="col">{{book.quantity}}</td>
+
+        <td scope="col">            
+            <i class="fa fa-edit" style="font-size:24px" [routerLink]="['/update', book.id]"></i>
+            <i class="fa fa-trash-o" style="font-size:24px;color:red" (click)="onDelete(book.id)"></i>
+        </td>
+        <td>
+
+        </td>
+      </tr>   
+    </tbody>
+  </table>

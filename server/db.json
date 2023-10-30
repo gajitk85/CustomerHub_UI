@@ -1,0 +1,46 @@
+{
+  "Books": [
+    {
+      "id": 585,
+      "name": "To Kill a Mockingbird",
+      "genre": "Learning",
+      "price": 347.1,
+      "quantity": "300"
+    },
+    {
+      "id": 87878,
+      "name": "Eat that frog",
+      "genre": "Motivation",
+      "price": 343,
+      "quantity": 230
+    },
+    {
+      "name": "ABSALOM, ABSALOM! BY WILLIAM FAULKNER",
+      "genre": "Knowledge",
+      "price": 101,
+      "quantity": "100",
+      "id": 87879
+    },
+    {
+      "name": "A TIME TO KILL BY JOHN GRISHAM",
+      "genre": "Learning",
+      "price": 1020,
+      "quantity": "200",
+      "id": 87880
+    },
+    {
+      "name": "THE HOUSE OF MIRTH BY EDITH WHARTON",
+      "genre": "Ecclesiastes ",
+      "price": 440.89,
+      "quantity": "200",
+      "id": 87881
+    },
+    {
+      "name": "To Kill a Mockingbird",
+      "genre": "Ecclesiastes ",
+      "price": 1234.56,
+      "quantity": "100",
+      "id": 87882
+    }
+  ]
+}

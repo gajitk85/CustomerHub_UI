@@ -1,0 +1,23 @@
+<div class="alert alert-danger alert-dismissible fade show" role="alert" [ngStyle]="{'display':!displayError?'none':'block'}">
+    <strong>Error!!!!</strong> 
+    {{displayError}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="form-row" >
+      <div class="form-group col-md-12">
+        <label for="inputEmail4">Customer Name</label>
+        <input type="text" class="form-control" id="inputName" placeholder="Please Enter Customer Full Name" [(ngModel)]="customer.fullName" >
+      </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-12">
+        <label for="inputPassword4">Customer Date Of Birth</label>
+        <input type="datetime-local"  class="form-control" id="inputDate" placeholder="Please Date Of Birth"
+         [(ngModel)]="customer.dateOfBirth">
+      </div> 
+  </div>
+    <div class="form-group col-md-6">
+    <button type="submit" class="btn btn-primary" (click)="addEditCustomer()">submit</button>
+    </div>
